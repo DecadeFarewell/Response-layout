@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./demo.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="./images/logo.png" alt="">
+        </div>
+        <div class="nav">
+            <ul>
+                <li>网站首页</li>
+                <li>精品路线</li>
+                <li>精品路线</li>
+                <li>精品路线</li>
+                <li>精品路线</li>
+            </ul>
+        </div>
+        <div class="btn">三</div>
+        <div class="drop">
+            <ul class="drop-select">
+                <li class="active">网站首页</li>
+                <li>精品路线</li>
+                <li>精品路线</li>
+                <li>精品路线</li>
+                <li>精品路线</li>
+            </ul>
+        </div>
+    </div>
+    <div class="swiper"></div>
+    <div class="center">
+        <ul>
+            <li>
+                <img src="./images/4.png" alt="">
+                <p>多年业务经验</p>
+            </li>
+            <li>
+                <img src="./images/5.png" alt="">
+                <p>多年业务经验</p>
+            </li>
+            <li>
+                <img src="./images/6.png" alt="">
+                <p>多年业务经验</p>
+            </li>
+        </ul>
+    </div>
+    <div class="project">
+        <div class="title">
+            <p>热门项目</p>
+            <p>Hot selling tour line</p>
+        </div>
+        <ul>
+            <li>
+                <img src="./images/7.png" alt="">
+                <p>尼罗河，世界上最长的河流</p>
+            </li>
+            <li>
+                <img src="./images/8.png" alt="">
+                <p>尼罗河，世界上最长的河流</p>
+            </li>
+            <li>
+                <img src="./images/9.png" alt="">
+                <p>尼罗河，世界上最长的河流</p>
+            </li>
+            <li>
+                <img src="./images/10.png" alt="">
+                <p>尼罗河，世界上最长的河流</p>
+            </li>
+            <li>
+                <img src="./images/11.png" alt="">
+                <p>尼罗河，世界上最长的河流</p>
+            </li>
+            <li>
+                <img src="./images/12.png" alt="">
+                <p>尼罗河，世界上最长的河流</p>
+            </li>
+            <li>
+                <img src="./images/13.png" alt="">
+                <p>尼罗河，世界上最长的河流</p>
+            </li>
+            <li>
+                <img src="./images/14.png" alt="">
+                <p>尼罗河，世界上最长的河流</p>
+            </li>
+        </ul>
+    </div>
+    <div class="footer">
+        <span>在旅行作为一种社会行为，古代即以存在，中国是世界文明古国之一，旅行活动的兴起同样居世界前列，中国早在公元前22世纪就有了。当时最典型的旅行家大概要数大禹了，他为了疏浚九江十八河，游览了大好河山。</span>
+    </div>
+
+    <script src="./sliderImg/jquery-3.3.1.min.js"></script>
+    <script src="./sliderImg/swiperImg.js"></script>
+    <script>
+        $('.swiper').swiperImg({
+                imgList: ['./images/1.jpg', './images/1.jpg', './images/1.jpg'],
+            })
+            //导航栏按钮点击事件
+        $('.btn').on('click', function(e) {
+            $('.drop-select').slideToggle();
+        })
+        $('.drop-select li').not(':first').hover(function() {
+                $(this).removeClass('active');
+                $(this).addClass('active');
+            }, function() {
+                $(this).removeClass('active');
+            })
+            //点击图片放大
+        flag = false;
+        $('.project img').hover(function() {
+            $(this).addClass('active');
+        }, function() {
+            $(this).removeClass('active');
+        })
+    </script>
+</body>
+
+</html>

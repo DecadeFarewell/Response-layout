@@ -1,0 +1,58 @@
+
+/* #wrapper .swiperUl {
+    width: 2500px;
+    height: 300px;
+    position: absolute;
+    left: -1500px;
+} */
+/* #wrapper .swiperUl li {
+    float: left;
+    width: 500px;
+    height: 300px;
+} */
+/* #wrapper .swiperUl li img {
+    width: 500px;
+    height: 300px;
+} */
+#wrapper .btn div {
+    width: 45px;
+    height: 30px;
+    position: absolute;
+    background-color: black;
+    opacity: 0.5;
+    color: #fff;
+    text-align: center;
+    top: 50%;
+    margin-top: -15px;
+    line-height: 30px;
+    cursor: pointer;
+}
+#wrapper .btn .leftBtn {
+    border-radius: 0 50px 50px 0;
+    left: 0;
+}
+
+#wrapper .btn .rightBtn {
+    border-radius:50px  0 0 50px;
+    right: 0;
+}
+.spot {
+    width: 100px;
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    margin-left: -50px; 
+    
+}
+.spot li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid #eee;
+    float: left;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.spot li.active {
+    background-color: orange;
+}
